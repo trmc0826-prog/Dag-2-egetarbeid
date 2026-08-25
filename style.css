@@ -1,0 +1,65 @@
+h1 {
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-size: 55px;
+  margin: 0;
+  text-align: center;
+  font-family: "archivo black", sans-serif;
+}
+#nav-logo {
+  color-scheme: blue;
+  cursor: pointer;
+  font-size: 50px;
+  border-radius: 25px;
+}
+header {
+  background-color: #f1f1f1;
+  padding: 10px 20px 10px 20px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-start;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 400px;
+}
+#nav-btn-group {
+  display: flex;
+  gap: 25px;
+}
+button {
+  font-family: "Roboto", sans-serif;
+}
+footer {
+  background-color: #f1f1f1;
+  padding: 25px;
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+figure img {
+  display: block;
+  width: 85%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.vision-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
