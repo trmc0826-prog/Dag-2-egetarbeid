@@ -150,3 +150,62 @@ h3 {
   text-align: center;
   justify-content: center;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+h1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.word-left,
+.word-right {
+  display: inline-block;
+  white-space: nowrap;
+  opacity: 0;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.word-left {
+  animation-name: slideFromLeft;
+  transform: translateX(-120%);
+}
+.word-right {
+  animation-name: slideFromRight;
+  transform: translateX(120%);
+  animation-delay: 0.2s;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
